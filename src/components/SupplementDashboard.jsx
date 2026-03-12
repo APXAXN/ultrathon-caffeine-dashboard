@@ -31,6 +31,7 @@ const C = {
   tealAlpha:  'rgba(29,158,117,0.08)',
   tealLight:  '#63B8A0',
   tealLAlpha: 'rgba(99,184,160,0.08)',
+  orange:     '#F27025',
   red:        '#E24B4A',
   redAlpha:   'rgba(226,75,74,0.06)',
   gray:       '#888780',
@@ -275,7 +276,7 @@ const compoundChartData = {
   datasets: [
     { label: 'Caffeine',     data: [4.9, 3.9, 3.1, 15, 12], backgroundColor: 'rgba(55,138,221,0.75)',  borderRadius: 3 },
     { label: 'Beta-alanine', data: [1.2, 1.8, 2.5,  4,  2], backgroundColor: 'rgba(99,184,160,0.75)',  borderRadius: 3 },
-    { label: 'Combined',     data: [7.3, 6.4, 6.8, 20, 15], backgroundColor: 'rgba(29,158,117,0.88)',  borderRadius: 3 },
+    { label: 'Combined',     data: [7.3, 6.4, 6.8, 20, 15], backgroundColor: 'rgba(242,112,37,0.88)',  borderRadius: 3 },
   ],
 }
 
@@ -531,7 +532,7 @@ export default function SupplementDashboard() {
       <LegendRow items={[
         { color: C.blue,      label: 'Caffeine'     },
         { color: C.tealLight, label: 'Beta-alanine' },
-        { color: C.teal,      label: 'Combined'     },
+        { color: C.orange,    label: 'Combined'     },
       ]} />
       <div style={s.chartWrap(260)}>
         <Bar data={compoundChartData} options={compoundChartOptions} />

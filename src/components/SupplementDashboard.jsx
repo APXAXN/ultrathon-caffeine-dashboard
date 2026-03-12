@@ -390,6 +390,13 @@ export default function SupplementDashboard() {
   return (
     <div style={s.page}>
 
+      {/* ── Top-right wordmark ── */}
+      <div style={{ position: 'fixed', top: 20, right: 24, zIndex: 100 }}>
+        <span style={{ fontFamily: 'var(--font-mono)', fontSize: 12, color: '#F5C842', letterSpacing: '0.06em' }}>
+          ultrathon.io
+        </span>
+      </div>
+
       {/* ── Header ── */}
       <p style={{ fontSize: 11, letterSpacing: '0.14em', textTransform: 'uppercase', color: 'var(--color-text-secondary)', marginBottom: 8 }}>
         Supplement intelligence / cycling · anaerobic sprint protocol

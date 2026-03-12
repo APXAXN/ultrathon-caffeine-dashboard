@@ -16,6 +16,7 @@
   --color-blue: #378ADD;
   --color-teal: #1D9E75;
   --color-teal-light: #63B8A0;
+  --color-yellow: #F5C842;
   --color-red: #E24B4A;
   --color-gray: #888780;
   --font-mono: 'IBM Plex Mono', monospace;
@@ -52,7 +53,7 @@ input[type='range']::-webkit-slider-thumb {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--color-text-primary);
+  background: var(--color-yellow);
   cursor: pointer;
   border: none;
 }
@@ -60,7 +61,7 @@ input[type='range']::-moz-range-thumb {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background: var(--color-text-primary);
+  background: var(--color-yellow);
   cursor: pointer;
   border: none;
 }
